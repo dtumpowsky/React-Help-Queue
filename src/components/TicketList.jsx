@@ -1,5 +1,5 @@
-import React from 'react'
-import Ticket from './Ticket'
+import React from 'react';
+import Ticket from './Ticket';
 
 var masterTicketList = [
   {
@@ -17,11 +17,12 @@ var masterTicketList = [
     location: '9F',
     issue: 'Donkey picture not displaying on hover in Zoology app. :('
   }
-]
+];
 
 function TicketList(){
   return (
     <div>
+      <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
           location={ticket.location}
@@ -29,7 +30,7 @@ function TicketList(){
           key={index}/>
       )}
     </div>
-  )
+  );
 }
 
-export default TicketList
+export default TicketList;
