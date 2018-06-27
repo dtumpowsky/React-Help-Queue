@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a7fa57e57498994089fd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8be9a342694404528f79"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -42732,11 +42732,31 @@ var _temp = function () {
 
 
 
+var masterTicketList = [{
+  names: 'Thato and Haley',
+  location: '3A',
+  issue: 'Firebase won\'t save record. Halp.'
+}, {
+  names: 'Sleater and Kinney',
+  location: '4B',
+  issue: 'Fox image not displaying on page, can only see duck?'
+}, {
+  names: 'Imani & Jacob',
+  location: '9F',
+  issue: 'Donkey picture not displaying on hover in Zoology app. :('
+}];
+
 function TicketList() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Ticket__["a" /* default */], {
-    location: '3A',
-    names: 'Thato and Haley',
-    issue: 'Firebase will not save record!' });
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    null,
+    masterTicketList.map(function (ticket, index) {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Ticket__["a" /* default */], { names: ticket.names,
+        location: ticket.location,
+        issue: ticket.issue,
+        key: index });
+    })
+  );
 }
 
 var _default = TicketList;
@@ -42747,6 +42767,8 @@ var _temp = function () {
   if (typeof __REACT_HOT_LOADER__ === 'undefined') {
     return;
   }
+
+  __REACT_HOT_LOADER__.register(masterTicketList, 'masterTicketList', '/Users/Guest/Desktop/React-Help-Queue/src/components/TicketList.jsx');
 
   __REACT_HOT_LOADER__.register(TicketList, 'TicketList', '/Users/Guest/Desktop/React-Help-Queue/src/components/TicketList.jsx');
 
