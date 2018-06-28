@@ -47,6 +47,10 @@
         "semi": [
             "error",
             "always"
+        ],
+        "console": [
+            "error",
+            2
         ]
     }
 }
