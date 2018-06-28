@@ -16,6 +16,7 @@
         "react"
     ],
     "rules": {
+      "no-console": 1,
       "react/jsx-key": 2,
       "react/jsx-uses-vars": 2,
       "react/jsx-uses-react": 2,
@@ -47,10 +48,6 @@
         "semi": [
             "error",
             "always"
-        ],
-        "console": [
-            "error",
-            2
         ]
     }
 }
