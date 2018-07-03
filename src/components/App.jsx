@@ -14,17 +14,20 @@ class App extends React.Component {
     super(props);
     this.state = {
       masterTicketList:[]
-    };this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
+    };
+    this.handleAddingNewTicketToList = this.handleAddingNewTicketToList.bind(this);
   }
 
   componentDidMount() {
+    console.log('componentDidMount');
     this.waitTimeUpdateTimer = setInterval(() =>
       this.updateTicketElapsedWaitTime(),
-    5000
+    60000
     );
   }
 
   componentWillUnmount(){
+    console.log('componentWillUnmount');
     clearInterval(this.waitTimeUpdateTimer);
   }
 
