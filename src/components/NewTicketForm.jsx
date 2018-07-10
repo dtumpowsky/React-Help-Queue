@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Moment from 'moment';
 
 function NewTicketForm(props){
-
+  console.log(props);
   let _names = null;
   let _location = null;
   let _issue = null;
