@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Moment from 'moment';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
