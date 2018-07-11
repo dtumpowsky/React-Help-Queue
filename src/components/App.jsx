@@ -67,7 +67,7 @@ class App extends React.Component {
             currentRouterPath={props.location.pathname}
             onTicketSelection={this.handleChangingSelectedTicket}
             selectedTicket={this.state.selectedTicket}/>} />
-          
+
           <Route component={Error404} />
         </Switch>
       </div>
@@ -81,7 +81,7 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterTicketList: state
+    masterTicketList: state.masterTicketList
   };
 };
 
