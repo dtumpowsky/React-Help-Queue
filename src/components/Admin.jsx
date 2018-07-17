@@ -4,7 +4,6 @@ import TicketList from './TicketList';
 import TicketDetail from './TicketDetail';
 import { connect } from 'react-redux';
 
-
 function Admin(props){
   let optionalSelectedTicketContent = null;
   if (props.selectedTicket.length > 0){
@@ -14,7 +13,8 @@ function Admin(props){
     <div>
       <h2>Admin</h2>
       {optionalSelectedTicketContent}
-      <TicketList ticketList={props.ticketList}
+      <TicketList
+        ticketList={props.ticketList}
         currentRouterPath={props.currentRouterPath} />
     </div>
   );
