@@ -8,7 +8,9 @@ import PropTypes from 'prop-types';
 import Moment from 'moment';
 import Admin from './Admin';
 import { connect } from 'react-redux';
-import c from './../constants';
+import constants from './../constants';
+
+const { c } = constants;
 
 
 class App extends React.Component {
@@ -34,7 +36,7 @@ class App extends React.Component {
         id: ticketId,
         formattedWaitTime: newFormattedWaitTime
       };
-      dispatch(action)
+      dispatch(action);
     });
   }
 
